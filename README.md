@@ -66,7 +66,6 @@ Com o ambiente configurado, é hora de validar o fluxo completo:
 
 1. Faça o upload de arquivos localmente para o bucket S3 simulado:
 
-```bash
 awslocal s3 cp caminho/do/arquivo.pdf s3://meu-bucket
 
 2. Observe se a função Lambda foi executada automaticamente (ver logs do LocalStack / container).

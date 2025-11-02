@@ -43,7 +43,7 @@ O **LocalStack** permite simular os principais serviços da AWS em ambiente loca
 localstack start
 awslocal s3 mb s3://meu-bucket
 awslocal dynamodb create-table ...
-
+bash
 ---
 
 ### 5. Criando os Recursos
@@ -67,6 +67,7 @@ Com o ambiente configurado, é hora de validar o fluxo completo:
 1. Faça o upload de arquivos localmente para o bucket S3 simulado:
    ```bash
    awslocal s3 cp caminho/do/arquivo.pdf s3://meu-bucket
+bash
 
 2. Observe se a função Lambda foi executada automaticamente (ver logs do LocalStack / container).
 

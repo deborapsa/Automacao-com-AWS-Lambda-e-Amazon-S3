@@ -1,4 +1,4 @@
-# 🧩 Desafio: Executando Tarefas Automatizadas com AWS Lambda e S3  
+# Executando Tarefas Automatizadas com AWS Lambda e S3  
 
 ## 🧠 Descrição  
 Este projeto tem como objetivo aplicar, na prática, os conceitos de automação de tarefas utilizando **AWS Lambda** e **Amazon S3**, simulando um ambiente de processamento de arquivos com **LocalStack**.  

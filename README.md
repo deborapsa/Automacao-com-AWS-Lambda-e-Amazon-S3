@@ -66,7 +66,8 @@ Com o ambiente configurado, é hora de validar o fluxo completo:
 
 1. Faça o upload de arquivos localmente para o bucket S3 simulado:
 
-   awslocal s3 cp caminho/do/arquivo.pdf s3://meu-bucket
+```bash
+awslocal s3 cp caminho/do/arquivo.pdf s3://meu-bucket ...
 
 
 2. Observe se a função Lambda foi executada automaticamente (ver logs do LocalStack / container).
@@ -104,11 +105,12 @@ awslocal dynamodb scan --table-name NomeDaTabela
 
 ---
 
-🚀 ### Como Executar Localmente
+## 🚀 Como Executar Localmente
 
 1. Inicie o LocalStack:
 
-localstack start
+```bash
+localstack start ...
 
 2. Crie o bucket e a tabela (exemplos):
 

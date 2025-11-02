@@ -39,11 +39,11 @@ O **LocalStack** permite simular os principais serviços da AWS em ambiente loca
 É ideal para testes e desenvolvimento de integrações entre **S3**, **Lambda** e **DynamoDB**.  
 
 **Comandos básicos:**  
-```bash
+
 localstack start
 awslocal s3 mb s3://meu-bucket
 awslocal dynamodb create-table ...
-bash
+
 ---
 
 ### 5. Criando os Recursos
@@ -65,9 +65,9 @@ O evento **S3:ObjectCreated:\*** deve ser mapeado para acionar a função Lambda
 Com o ambiente configurado, é hora de validar o fluxo completo:
 
 1. Faça o upload de arquivos localmente para o bucket S3 simulado:
-   ```bash
+
    awslocal s3 cp caminho/do/arquivo.pdf s3://meu-bucket
-bash
+
 
 2. Observe se a função Lambda foi executada automaticamente (ver logs do LocalStack / container).
 
@@ -107,11 +107,11 @@ awslocal dynamodb scan --table-name NomeDaTabela
 🚀 ### Como Executar Localmente
 
 1. Inicie o LocalStack:
-bash
+
 localstack start
 
 2. Crie o bucket e a tabela (exemplos):
-bash
+
 awslocal s3 mb s3://meu-bucket
 awslocal dynamodb create-table \
   --table-name Curriculos \
@@ -120,14 +120,14 @@ awslocal dynamodb create-table \
   --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5
 
 3. Faça o upload de um arquivo para testar:
-bash
+
 awslocal s3 cp arquivo.pdf s3://meu-bucket
 
 4. Verifique logs e registros:
 
 Consulte os logs do Lambda no console/LocalStack;
 Confira itens na tabela DynamoDB:
-bash
+
 awslocal dynamodb scan --table-name Curriculos
 
 ---
